@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    background-color: rgb(160, 165, 175);
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0;
+    font-size: 25px;
+    background-image: linear-gradient( #a6a6a6 , #ffffff );
+  }
+
+.imagem-cabecalho {
+    width: 15%;   
+ }
+
+.hover-underline-animation {
+    display: inline-block;
+    margin: 0 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.topico-item-cabecalho {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.agrinho {
+    background-image: linear-gradient(white, rgb(203, 203, 255)
+    );
+    text-align: center;
+   
+}
+
+.texto-agrinho2023 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+}
+
+.agrinho-imagem {
+    height: 300px;
+    padding: 20px;
+}
+
+.agrinho-imagem{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.agrinho-imagem:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+.rodape {
+    background-color: rgb(203, 203, 255);
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.imagem-rodape {
+    height: 90px;
+    padding:25px 0;
+}
